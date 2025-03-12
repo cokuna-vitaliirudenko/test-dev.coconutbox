@@ -10,7 +10,7 @@ public class ItemIrreversiblyDeleteTest extends BaseTest {
 
     @Test
     public void irreversiblyDeleteOneItemTest() throws InterruptedException {
-        int idOfItem = 11;
+        int idOfItem = 4;
         String deletedCategory = "Gelöscht";
         String deleteButton = "Löschen";
         String titleName = "Datei löschen";

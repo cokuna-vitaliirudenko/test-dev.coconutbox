@@ -11,7 +11,7 @@ public class UserCanRestoreBlokedItem extends BaseTest {
 
     @Test
     public void restoreOneArchivedItemTest() throws InterruptedException {
-        int idOfItem = 28;
+        int idOfItem = 1;
         String mainAction = "ENTSPERREN";
         String titleName = "Datei entsperren";
         String blockedCategory = "Gesperrt";

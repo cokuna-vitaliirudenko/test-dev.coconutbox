@@ -35,8 +35,8 @@ public class ItemDeleteTest extends BaseTest {
     }
 
     @Test
-    public void archiveOneItemTestAndCheckInfo() throws InterruptedException {
-        int idOfItem = 5;
+    public void deleteItemTestAndCheckInfo() throws InterruptedException {
+        int idOfItem = 8;
         String deleteButton = "Löschen";
         String titleName = "Datei löschen";
         String deleteReason = "Datei ist veraltet und nicht mehr aktuell";
@@ -54,6 +54,7 @@ public class ItemDeleteTest extends BaseTest {
         mediaListPage.clickOneItemOfList(idOfItem);
         itemPage = new ItemPage(driver);
         itemPage.moveToElementAndClick(deleteButton);
+        itemPage.clickDelButton();
         deletePage = new DeletePage(driver);
         deletePage.correctTitleName(titleName);
         deletePage.deleteReasonInputField(deleteReason);

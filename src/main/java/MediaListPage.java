@@ -82,6 +82,13 @@ public class MediaListPage extends BasePage {
         List<WebElement> archivedItems = driver.findElements(By.xpath("//div[contains(@class, 'media-item') and @data-id]//button[contains(@class, 'btn-std')][last()]"));
         return archivedItems;
     }
+    public List<WebElement> getBlockedItems() throws InterruptedException {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        Thread.sleep(1000);
+        //wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//div[contains(@class, 'media-item') and @data-id]//button[contains(@class, 'btn-std')][last()]")));
+        List<WebElement> archivedItems = driver.findElements(By.xpath("//div[contains(@class, 'media-item') and @data-id]//button[contains(@class, 'btn-std')][last()]"));
+        return archivedItems;
+    }
 
     public void moveToElementAndClick(String name) {
         super.moveToElementAndClick(name, sideMenuButtons);

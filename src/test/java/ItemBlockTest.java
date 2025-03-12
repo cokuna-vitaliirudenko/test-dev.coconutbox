@@ -42,7 +42,7 @@ public class ItemBlockTest extends BaseTest {
 
     @Test
     public void archiveOneItemTestAndCheckInfoAndProtokoll() throws InterruptedException {
-        int idOfItem = 8;
+        int idOfItem = 2;
         String blockButton = "Sperren";
         String titleName = "Datei sperren";
         String titleProtokoll = "Protokoll";

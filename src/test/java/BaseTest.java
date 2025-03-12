@@ -7,11 +7,18 @@ public class BaseTest {
     ChromeDriver driver;
     String BASE_URL = "https://test-dev.coconutbox.com/login/    ";
     public static final String VALID_EMAIL = "v.rudenko@cokuna.com";
+    public static final String VALID_EMAIL_BALBOA = "rokki.balboa@cokuna.de";
+    public static final String VALID_EMAIL_KIRSTEN = "kirsten.dunst@cokuna.de";
+    public static final String VALID_EMAIL_SAMMUEL = "m.windu@cokuna.com";
     public static final String INVALID_EMAIL = "v.rudenko(cokuna.com";
     public static final String EMPTY_EMAIL = "";
     public static final String VALID_PASSWORD = "i6r3cvl5wtr2iv3tlbv28i3";
+    public static final String VALID_PASSWORD_BALBOA = "123";
+    public static final String VALID_PASSWORD_KIRSTEN = "123";
+    public static final String VALID_PASSWORD_SAMMUEL = "123";
     public static final String INVALID_PASSWORD = "r2iv3tlbv28i3";
     public static final String EMPTY_PASSWORD = "";
+
 
 
     @BeforeEach

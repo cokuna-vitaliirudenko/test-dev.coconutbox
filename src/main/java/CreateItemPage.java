@@ -10,7 +10,7 @@ public class CreateItemPage extends BasePage {
         super(driver);
     }
 
-    private static final String ABSOLUTEPATHFORCREATING = "/Users/vitaliirudenko/IdeaProjects/cokuna/src/main/resources/Bilder/blauUhr.jpg";
+    private static final String ABSOLUTEPATHFORCREATING = "/Users/vitaliirudenko/IdeaProjects/cokuna/src/main/resources/Bilder/hugo-boss.jpg";
     @FindBy(xpath = "//input[@placeholder='Title']")
     private WebElement titleInputField;
     @FindBy(xpath = "//*[@placeholder='Description']")

@@ -11,7 +11,7 @@ public class ItemArchiveTest extends BaseTest {
 
     @Test
     public void archiveOneItemTest() throws InterruptedException {
-        int idOfItem = 25;
+        int idOfItem = 23;
         String archiveButton = "Archivieren";
         //String deleteButton = "Löschen";
         String titleName = "Datei archivieren";
@@ -41,7 +41,7 @@ public class ItemArchiveTest extends BaseTest {
 
     @Test
     public void archiveOneItemTestAndCheckInfo() throws InterruptedException {
-        int idOfItem = 16;
+        int idOfItem = 2;
         String archiveButton = "Archivieren";
         String titleName = "Datei archivieren";
         String archiveReason = "Datei ist veraltet und nicht mehr aktuell";

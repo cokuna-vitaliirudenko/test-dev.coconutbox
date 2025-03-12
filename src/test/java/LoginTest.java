@@ -13,6 +13,22 @@ public class LoginTest extends BaseTest {
 
     }
     @Test
+    public void positiveSammuelLoginTest() {
+        loginPage = new LoginPage(driver);
+        loginPage.login(VALID_EMAIL_SAMMUEL, VALID_PASSWORD_SAMMUEL);
+        startPage = new StartPage(driver);
+        startPage.waitForLoadingStartPage();
+
+    }
+    @Test
+    public void positiveKirstenLoginTest() {
+        loginPage = new LoginPage(driver);
+        loginPage.login(VALID_EMAIL_KIRSTEN, VALID_PASSWORD_KIRSTEN);
+        startPage = new StartPage(driver);
+        startPage.waitForLoadingStartPage();
+
+    }
+    @Test
     public void negativeLoginTestInvalidPass() {
         loginPage = new LoginPage(driver);
         loginPage.login(VALID_EMAIL, INVALID_PASSWORD);
