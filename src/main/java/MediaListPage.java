@@ -71,19 +71,45 @@ public class MediaListPage extends BasePage {
         driver.findElement(By.xpath(xpath)).click();
 
     }
-    public void clickOneItemOfList(int index) {
+    public void clickOneItemOfList2(int index) {
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
         String containerXpath = "//div[contains(@class, 'media-item') and @data-id='" + index + "']";
         WebElement container = driver.findElement(By.xpath(containerXpath));
+        js.executeScript("arguments[0].scrollIntoView(true);", container);
         //getWait().forVisibility(container);
         Actions actions = new Actions(driver);
         actions.moveToElement(container).perform();
 
         String buttonXpath = "//div[contains(@class, 'media-item') and @data-id='" + index + "']//button[contains(@class, 'btn-std')][last()]";
 
+        js.executeScript("arguments[0].scrollIntoView(true);", buttonXpath);
+
         getWait().forVisibility(driver.findElement(By.xpath(buttonXpath)));
         getWait().forClickable(driver.findElement(By.xpath(buttonXpath)));
 
         driver.findElement(By.xpath(buttonXpath)).click();
+    }
+    public void clickOneItemOfList(int index) {
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        // XPath des Containers für das Element
+        String containerXpath = "//div[contains(@class, 'media-item') and @data-id='" + index + "']";
+        WebElement container = driver.findElement(By.xpath(containerXpath));
+        // Scrollen zum Container, um sicherzustellen, dass er sichtbar ist
+        js.executeScript("arguments[0].scrollIntoView(true);", container);
+        // Actions, um das Element zu fokussieren
+        Actions actions = new Actions(driver);
+        actions.moveToElement(container).perform();
+        // XPath für den Button
+        String buttonXpath = "//div[contains(@class, 'media-item') and @data-id='" + index + "']//button[contains(@class, 'btn-std')][last()]";
+        WebElement button = driver.findElement(By.xpath(buttonXpath));
+        // Scrollen zum Button, um sicherzustellen, dass er sichtbar ist
+        js.executeScript("arguments[0].scrollIntoView(true);", button);
+        // Warten, bis der Button sichtbar und anklickbar ist
+        getWait().forVisibility(button);
+        getWait().forClickable(button);
+        button.click();
     }
 
     public List<WebElement> getDeletedItems() throws InterruptedException {

@@ -28,7 +28,7 @@ public class UserCanRestoreAllDeletedItemsTest extends BaseTest {
         mediaListPage.waitForAllVisibilityResultItemList();
         Thread.sleep(1000);
         mediaListPage.moveToElementAndClick(deletedCategory);
-        //Thread.sleep(1000);
+
         for (int i = 0; i < 20; i++) {
             List<WebElement> deletedItems = mediaListPage.getDeletedItems();
             if (deletedItems.isEmpty()) {

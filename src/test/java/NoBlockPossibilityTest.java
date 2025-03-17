@@ -10,7 +10,7 @@ public class NoBlockPossibilityTest extends BaseTest {
 
     @Test
     public void noBlockPossibilityTest() throws InterruptedException {
-        int idOfItem = 1;
+        int idOfItem = 3;
         loginPage = new LoginPage(driver);
         loginPage.login(VALID_EMAIL_KIRSTEN, VALID_PASSWORD_KIRSTEN);
         startPage = new StartPage(driver);

@@ -10,7 +10,7 @@ public class NoArchivePossibilityTest extends BaseTest {
 
     @Test
     public void noArchivePossibilityTest() throws InterruptedException {
-        int idOfItem = 1;
+        int idOfItem = 3;
         loginPage = new LoginPage(driver);
         loginPage.login(VALID_EMAIL_SAMMUEL, VALID_PASSWORD_SAMMUEL);
         startPage = new StartPage(driver);

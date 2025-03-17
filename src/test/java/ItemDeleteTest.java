@@ -67,7 +67,6 @@ public class ItemDeleteTest extends BaseTest {
         Thread.sleep(1000);
         mediaListPage.clickOneItemOfList(idOfItem);
         itemPage = new ItemPage(driver);
-        //Thread.sleep(3000);
         itemPage.moveToElementAndClick(mainAction);
         Thread.sleep(1000);
         assertTrue(itemPage.reasonIsDisplayed(deleteReason));

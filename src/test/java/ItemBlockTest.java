@@ -1,5 +1,6 @@
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class ItemBlockTest extends BaseTest {
@@ -91,7 +92,7 @@ public class ItemBlockTest extends BaseTest {
     }
 
     @Test
-    public void archiveOneItemTestAndCheckInfoAndProtokollAndRestore() throws InterruptedException {
+    public void blockItemAndCheckInfoAndProtokollAndRestoreTest() throws InterruptedException {
         int idOfItem = 2;
         String blockButton = "Sperren";
         String titleName = "Datei sperren";

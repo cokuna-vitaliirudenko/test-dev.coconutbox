@@ -11,7 +11,7 @@ public class NoDeletePossibilityTest extends BaseTest {
 
     @Test
     public void noDeletePossibilityTest() throws InterruptedException {
-        int idOfItem = 1;
+        int idOfItem = 3;
         loginPage = new LoginPage(driver);
         loginPage.login(VALID_EMAIL_BALBOA, VALID_PASSWORD_BALBOA);
         startPage = new StartPage(driver);
