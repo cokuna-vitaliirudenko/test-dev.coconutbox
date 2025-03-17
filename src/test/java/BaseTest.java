@@ -5,7 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class BaseTest {
     ChromeDriver driver;
-    String BASE_URL = "https://test-dev.coconutbox.com/login/    ";
+    String BASE_URL = "https://test-dev.coconutbox.com/login/";
     public static final String VALID_EMAIL = "v.rudenko@cokuna.com";
     public static final String VALID_EMAIL_BALBOA = "rokki.balboa@cokuna.de";
     public static final String VALID_EMAIL_KIRSTEN = "kirsten.dunst@cokuna.de";

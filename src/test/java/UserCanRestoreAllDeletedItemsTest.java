@@ -28,7 +28,6 @@ public class UserCanRestoreAllDeletedItemsTest extends BaseTest {
         mediaListPage.waitForAllVisibilityResultItemList();
         Thread.sleep(1000);
         mediaListPage.moveToElementAndClick(deletedCategory);
-
         for (int i = 0; i < 20; i++) {
             List<WebElement> deletedItems = mediaListPage.getDeletedItems();
             if (deletedItems.isEmpty()) {
@@ -47,7 +46,6 @@ public class UserCanRestoreAllDeletedItemsTest extends BaseTest {
             restorePage.clickCloseButton();
             mediaListPage.waitForLoadingItemsListPage();
             mediaListPage.moveToElementAndClick(deletedCategory);
-            //Thread.sleep(1000);
         }
     }
 }

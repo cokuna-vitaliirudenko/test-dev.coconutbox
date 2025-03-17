@@ -28,7 +28,6 @@ public class UserCanRestoreAllArchivedItemsTest extends BaseTest {
         mediaListPage.waitForAllVisibilityResultItemList();
         Thread.sleep(1000);
         mediaListPage.moveToElementAndClick(archivedCategory);
-        //Thread.sleep(1000);
         for (int i = 0; i < 20; i++) {
             List<WebElement> archivedItems = mediaListPage.getArchivedItems();
             if (archivedItems.isEmpty()) {
@@ -47,7 +46,6 @@ public class UserCanRestoreAllArchivedItemsTest extends BaseTest {
             restorePage.clickCloseButton();
             mediaListPage.waitForLoadingItemsListPage();
             mediaListPage.moveToElementAndClick(archivedCategory);
-           // Thread.sleep(1000);
         }
     }
 }

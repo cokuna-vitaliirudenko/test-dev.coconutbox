@@ -29,7 +29,6 @@ public class UserCanRestoreAllBlockedItemsTest extends BaseTest {
         mediaListPage.waitForAllVisibilityResultItemList();
         Thread.sleep(1000);
         mediaListPage.moveToElementAndClick(blockedCategory);
-        //Thread.sleep(1000);
         for (int i = 0; i < 20; i++) {
             List<WebElement> blockedItems = mediaListPage.getBlockedItems();
             if (blockedItems.isEmpty()) {

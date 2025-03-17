@@ -13,7 +13,6 @@ public class ItemPage extends BasePage {
     private WebElement addToFavoriteButton;
     @FindBy(xpath = " //*[@data-testid='price-alert-button']")
     private WebElement priceAlertButton;
-    //li[9]
     @FindBy(xpath = "//li[9]")
     private WebElement deleteItemButton;
     //span[contains(text(),'Löschen')]
@@ -21,7 +20,6 @@ public class ItemPage extends BasePage {
     private WebElement mainDeleteItemButton;
     @FindBy(xpath = "//h1")
     private WebElement titleName;
-    //@FindBy(xpath = "//*[@class='text-overflow-element']")
     @FindBy(xpath = "//*[@class='popup-sidebar']//li")
     private List<WebElement> activeButtonList;
     @FindBy(xpath = "//div[@class='modal-hint-wrapper animate-slide-left-to-right']//div[@class='alert-box-right']")
@@ -35,6 +33,8 @@ public class ItemPage extends BasePage {
     private WebElement archiveButton;
     @FindBy(xpath = "//span[normalize-space()='Sperren']")
     private WebElement blockButton;
+
+
 
     public void clickDelButton() {
         getWait().forVisibility(deleteButton);
